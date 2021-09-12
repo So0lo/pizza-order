@@ -4,6 +4,7 @@ export function addSelectedIngredients (liB) {
     const li = document.createElement(`li`);
     li.textContent = liB.textContent;
     li.dataset.price = liB.dataset.price;
+    li.cloneNode(lib);
     selectedLi.append(li);
 }
 
