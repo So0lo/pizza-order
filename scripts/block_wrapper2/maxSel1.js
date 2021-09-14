@@ -1,5 +1,6 @@
-import {addSelectedIngredients, delSelectedIngredients} from '../block_wrapper1/add_del_ingredients.js';
-import { showPrice } from '../block_wrapper1/price.js';
+import {addSelectedIngredients, delSelectedIngredients} from '../block_wrapper1/block_wrapper1.1/add_del_ingredients.js';
+import { showPrice } from '../block_wrapper1/block_wrapper1.1/price.js';
+import {chekKindLis} from '../block_wrapper1/block_wrapper1.2/pizza.js';
 
 const maxSel1 = (e) => {
     if(e.target.tagName !== `UL`) {
@@ -15,8 +16,8 @@ const maxSel1 = (e) => {
             addSelectedIngredients(e.target);
         }
         showPrice();
+        chekKindLis();
     }
-    console.dir(e.target);
 };
 
 export {maxSel1};

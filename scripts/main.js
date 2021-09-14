@@ -1,13 +1,14 @@
-import { showPrice } from './block_wrapper1/price.js';
-import {maxSel1} from './block_wrapper_2/maxSel1.js';
-import {MaxSel2} from './block_wrapper_2/maxSel2.js';
+import { showPrice } from './block_wrapper1/block_wrapper1.1/price.js';
+import {maxSel1} from './block_wrapper2/maxSel1.js';
+import {MaxSel2} from './block_wrapper2/maxSel2.js';
 import {ulBase, ulIngredients1, ulIngredients2, ulSauce} from './ingredients/ingredientsAdd.js';
-import {selectedLi, delSelLi} from './block_wrapper1/selected_ingredients.js';
+import {selectedLi, delSelLi} from './block_wrapper1/block_wrapper1.1/selected_ingredients.js';
+import { btn, btnOrder } from './block_wrapper1/block_wrapper1.2/btn.js';
+import {chekKindLis} from './block_wrapper1/block_wrapper1.2/pizza.js';
 
+btn.addEventListener(`click`, btnOrder);
 showPrice();
-// const li = ulBase.querySelectorAll(`li`);
-// console.log(li);
-// [...li].forEach(el => el.addEventListener(`click`, maxSel1));
+chekKindLis();
 
 ulBase.addEventListener(`click`, maxSel1);
 

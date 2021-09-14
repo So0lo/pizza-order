@@ -109,6 +109,56 @@ li:hover {
     color: rgb(252, 66, 66);
 }
 
+.bg-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 99;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.modal p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.modal button {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: moccasin;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.3);
+}
+
+.modal button:hover {
+    background-color:khaki;
+
+}
+
+.modal button:active {
+    background-color:khaki;
+    box-shadow: none;
+}
+
 @media screen and (max-width: 945px) {
     .content_top {
         width: 100%;

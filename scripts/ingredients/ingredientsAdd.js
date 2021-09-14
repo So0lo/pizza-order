@@ -11,9 +11,9 @@ const ulIngredients2 = createIngredients(arrIngredients2, document.getElementsBy
 const ulSauce = createIngredients(arrSauces, document.getElementsByClassName(`sauce`)[0]);
 
 function createIngredients (arr, ul) {
-    arr.forEach(({name, price}) => {
+    arr.forEach(({name, price, kind}) => {
         ul.insertAdjacentHTML(`beforeend`, `
-        <li data-price="${price}">${name}</li>
+        <li data-price=${price} data-kind=${kind}>${name}</li>
         `);
     });
     return ul;
